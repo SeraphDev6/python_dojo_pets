@@ -13,8 +13,8 @@ class Pet:
             print(f"{self.name} isn't tired. They want to play()!")
     def eat(self):
         if self.energy<100:
-            self.energy=min(self.energy+5)
-            self.happiness=min(self.happiness+10)
+            self.energy=min(self.energy+5,100)
+            self.happiness=min(self.happiness+10,100)
             print(f"{self.name} : Nom NOm NOM")
         else:
             print(f"{self.name} isn't hungry. They want to play()!")
